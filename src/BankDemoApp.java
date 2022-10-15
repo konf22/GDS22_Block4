@@ -16,12 +16,21 @@ public class BankDemoApp {
         Gehaltskonto maxi = new Gehaltskonto("Maxi Mustermann", "iban", "bic");
         Gehaltskonto john = new Gehaltskonto("John Doe", "us-iban", "bic-us");
         
-        Gehaltskonto[] bank = new Gehaltskonto[3];
+        Gehaltskonto[] bank = new Gehaltskonto[1000];
         bank[0] = susi;
         bank[1] = maxi;
         bank[2] = john;
+        
+        Gehaltskonto[] smallbank = {susi, maxi, john};
+        System.out.println("smallbank.length = " + smallbank.length);
 
         for (int i = 0; i < bank.length; i++) {
+            if (bank[i] == null){
+                System.out.println(i + " ist die nächste freie Position");
+                break;
+            }
+
+
             System.out.println("bank[i].getKontostand() = " + bank[i].getKontostand());
         }
  
