@@ -10,8 +10,12 @@ public class FractionDemoApp {
         fraction2.print();
 
 
-        Fraction result = fraction1.multiplicate(fraction2);
-        result.print();
+        Fraction newFraction = fraction1.multiplicate(fraction2);
+        newFraction.print();
+
+        Fraction result4 = newFraction.multiplicate(
+                new Fraction(1, 2));
+        result4.print();
 
     }
 }
