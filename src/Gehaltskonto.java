@@ -4,11 +4,16 @@ public class Gehaltskonto {
     private String bic;
     private double kontostand;
 
+    public static int counter = 9876;
+    private int fortlaufendeNummer;
+
     public Gehaltskonto(String inhaber, String iban, String bic) {
         this.inhaber = inhaber;
         this.iban = iban;
         this.bic = bic;
         this.kontostand = 10.0;
+        this.counter++;
+        this.fortlaufendeNummer = counter;
     }
 
     public void aufbuchen(double wert) {
@@ -41,7 +46,9 @@ public class Gehaltskonto {
 
     public String toString() {
         return "Gehaltskonto{" +
-                "inhaber='" + inhaber + '\'' +
+                "fortlaufendeNummer='" + fortlaufendeNummer + '\'' +
+                ", counter='" + counter + '\'' +
+                ", inhaber='" + inhaber + '\'' +
                 ", iban='" + iban + '\'' +
                 ", bic='" + bic + '\'' +
                 ", kontostand=" + kontostand +
