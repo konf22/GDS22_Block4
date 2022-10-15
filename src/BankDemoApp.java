@@ -47,7 +47,9 @@ public class BankDemoApp {
         System.out.println("Gehaltskonto.counter = " + Gehaltskonto.counter);
         System.out.println("maxi.counter = " + maxi.counter);
         
-
+        char number2 = '2';
+        int asciiNumber2 = number2 - '0';
+        System.out.println("asciiNumber2 = " + asciiNumber2);
 
     }
 }
