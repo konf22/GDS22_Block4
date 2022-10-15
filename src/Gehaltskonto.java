@@ -8,7 +8,7 @@ public class Gehaltskonto {
         this.inhaber = inhaber;
         this.iban = iban;
         this.bic = bic;
-        this.kontostand = 0.0;
+        this.kontostand = 10.0;
     }
 
     public void aufbuchen(double wert) {
