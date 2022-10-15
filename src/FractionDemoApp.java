@@ -10,6 +10,8 @@ public class FractionDemoApp {
         fraction2.print();
 
 
+        Fraction result = fraction1.multiplicate(fraction2);
+        result.print();
 
     }
 }

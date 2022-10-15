@@ -1,3 +1,5 @@
+import java.util.concurrent.BrokenBarrierException;
+
 public class Fraction {
     private int nominator; // zähler
     private int denominator; // nenner
@@ -13,6 +15,13 @@ public class Fraction {
 
     public void print() {
         System.out.println(nominator + " / " + denominator);
+    }
+
+    public Fraction multiplicate(Fraction f2){
+        int newNominator = nominator * f2.nominator;
+        int newDenominator = denominator * f2.denominator;
+        Fraction result = new Fraction(newNominator, newDenominator);
+        return result;
     }
 
     public int getNominator() {
