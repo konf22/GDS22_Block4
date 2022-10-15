@@ -3,6 +3,7 @@ public class BankDemoApp {
     public static void main(String[] args) {
         // wir simulieren hier eine Bank
 
+        System.out.println("Gehaltskonto.counter = " + Gehaltskonto.counter);
 
         Gehaltskonto susi = new Gehaltskonto("Susi Sorglos", "AT612345...",
                 "RZABC");
@@ -44,6 +45,7 @@ public class BankDemoApp {
 
         // übungen mit static
         System.out.println("Gehaltskonto.counter = " + Gehaltskonto.counter);
+        System.out.println("maxi.counter = " + maxi.counter);
         
 
 
