@@ -17,5 +17,9 @@ public class FractionDemoApp {
                 new Fraction(1, 2));
         result4.print();
 
+        result4.trim();
+
+        result4.print();
+
     }
 }
